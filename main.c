@@ -33,11 +33,6 @@ int main(int argc, char *argv[])
     }
     c=0;
   }
-
-  for(i=0; i<k; i++)
-  {
-    printf(" %d \n", primearr[i]);
-  }
   
   printf("Smallest Prime Numbers is = %d\n", findsmall(primearr));
   printf("Largest Prime Number is %d\n", findbig(primearr));
