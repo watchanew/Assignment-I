@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     c=0;
   }
   
-  printf("Smallest Prime Numbers is = %d\n", findsmall(primearr));
+  printf("Smallest Prime Numbers is %d\n", findsmall(primearr));
   printf("Largest Prime Number is %d\n", findbig(primearr));
 
   return 0;
@@ -43,11 +43,12 @@ int main(int argc, char *argv[])
 int findsmall(int primearr[])
 {
   int i, smallest;
-  int size = sizeof(primearr)/sizeof(primearr[0]);
   smallest = primearr[0];
-  for (i = 0; i<size; i++) {
-    if (primearr[i] < smallest) {
-        smallest = primearr[i];
+  for (i=0; i<50; i++) 
+  {
+    if (primearr[i] < smallest && primearr[i] > 0) 
+    {
+      smallest = primearr[i];
     }
   }
 
@@ -57,11 +58,12 @@ int findsmall(int primearr[])
 int findbig(int primearr[])
 {
   int i, biggest;
-  int size = sizeof(primearr)/sizeof(primearr[0]);
   biggest = primearr[0];
-  for (i = 0; i<size; i++) {
-    if (primearr[i] > biggest) {
-        biggest = primearr[i];
+  for (i=0; i<50; i++) 
+  {
+    if (primearr[i] > biggest && primearr[i] > 0) 
+    {
+      biggest = primearr[i];
     }
   }
 
