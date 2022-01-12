@@ -33,10 +33,16 @@ int main(int argc, char *argv[])
     }
     c=0;
   }
+  if (k == 0)
+  {
+    printf(" This arguments don't have a prime number TT \n");
+  }
+  else
+  {
+    printf("Smallest Prime Numbers is %d\n", findsmall(primearr));
+    printf("Largest Prime Number is %d\n", findbig(primearr));
+  }
   
-  printf("Smallest Prime Numbers is %d\n", findsmall(primearr));
-  printf("Largest Prime Number is %d\n", findbig(primearr));
-
   return 0;
 }
 
