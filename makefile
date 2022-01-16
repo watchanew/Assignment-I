@@ -1,8 +1,8 @@
 compile: main.c 
-	 gcc main.c -o Watcharasak
+	 gcc main.c -o New
 
-run: Watcharasak
-	 ./Watcharasak
+run: New
+	 ./New
 
-clean: Watcharasak
-	 rm Watcharasak
+clean: New
+	 rm New

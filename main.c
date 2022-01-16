@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+int findsmall(int primearr[]);
+int findbig(int primearr[]);
 
 int main(int argc, char *argv[])
 {
@@ -42,6 +44,7 @@ int main(int argc, char *argv[])
     printf("Smallest Prime Numbers is %d\n", findsmall(primearr));
     printf("Largest Prime Number is %d\n", findbig(primearr));
   }
+  free(a);
   
   return 0;
 }
@@ -57,7 +60,7 @@ int findsmall(int primearr[])
       smallest = primearr[i];
     }
   }
-
+  
   return smallest;
 }
 
